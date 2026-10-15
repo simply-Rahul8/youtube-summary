@@ -1,0 +1,22 @@
+[
+  {"query": "https://www.youtube.com/live/6s5_mBA_Nsc access this video, generate a detailed summary, such that I get each and every detail of it; like a summarised document", "should_trigger": true},
+  {"query": "can you make study notes from this lecture https://youtu.be/Qm3rT8kLw2A its like 2 hours and there are no subtitles on it", "should_trigger": true},
+  {"query": "i have a private video on my channel (the onboarding walkthrough for new hires) https://www.youtube.com/watch?v=Zp41kQe9sXc - need a pdf of all the steps in it for the new joiners, i'm logged into that account in chrome", "should_trigger": true},
+  {"query": "grab the audio from https://www.youtube.com/watch?v=Hc7Vb2nLq0E as an mp3 so i can listen on my commute, and give me the key takeaways too", "should_trigger": true},
+  {"query": "~/Downloads/team-sync-2026-10-14.mp4 is yesterday's meeting recording. what did we actually decide? want notes i can share with the team", "should_trigger": true},
+  {"query": "tl;dw https://youtu.be/8fJk2LmN0aQ - the webinar on GKE autopilot pricing, give me the important bits", "should_trigger": true},
+  {"query": "our company all-hands was streamed as a members-only video on youtube, i'm a member: https://www.youtube.com/watch?v=Ab12Cd34Ef5. can you pull the key announcements into a doc", "should_trigger": true},
+  {"query": "turn this podcast episode recording ep42-final.m4a (on my desktop) into show notes with timestamps for each topic", "should_trigger": true},
+  {"query": "transcribe this yt vid for me https://www.youtube.com/watch?v=Tr9xYv3Wq2s and give me the full transcript plus a summary pdf", "should_trigger": true},
+  {"query": "the get certified session 2 recording is up now https://www.youtube.com/live/Kd82LmZq1pA - do the same thing you did for session 1, every detail into a pdf", "should_trigger": true},
+  {"query": "write a python script using the YouTube Data API v3 that pulls view counts and likes for every video on my channel into a csv", "should_trigger": false},
+  {"query": "embed this youtube video https://youtu.be/Hc7Vb2nLq0E on my next.js landing page, responsive 16:9 and lazy loaded", "should_trigger": false},
+  {"query": "summarize ~/Downloads/Q3-board-deck.pdf into 5 bullet points for my manager", "should_trigger": false},
+  {"query": "mlx-whisper install fails with 'No module named mlx' on my intel macbook, how do i fix it", "should_trigger": false},
+  {"query": "write me a youtube video script, about 8 minutes, explaining VPC networks in google cloud for beginners", "should_trigger": false},
+  {"query": "summarize this blog post for me https://cloud.google.com/blog/products/networking/global-vpc-explained", "should_trigger": false},
+  {"query": "design a thumbnail for my youtube video titled 'GCP IAM in 10 minutes', bold text, high contrast", "should_trigger": false},
+  {"query": "convert ~/notes/gcp-ace-cheatsheet.md into a nicely formatted pdf with a table of contents", "should_trigger": false},
+  {"query": "what are the best youtube channels and playlists to prepare for the google associate cloud engineer exam?", "should_trigger": false},
+  {"query": "yt-dlp keeps failing with HTTP Error 403 Forbidden in my github actions workflow that archives our conference talks, can you debug the workflow file", "should_trigger": false}
+]

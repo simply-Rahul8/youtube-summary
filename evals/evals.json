@@ -1,0 +1,48 @@
+{
+  "skill_name": "youtube-summary",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "can u make me a pdf summary of this vid https://www.youtube.com/watch?v=jNQXAC9IVRw",
+      "expected_output": "A PDF summary built from the video's manual captions, with metadata (title, channel, length), an overview and a notes section; no audio transcription needed.",
+      "files": [],
+      "assertions": [
+        "A PDF was produced",
+        "Page 1 is not mostly empty (>=500 chars, or a 1-page PDF)",
+        "No outside facts about the video above the Notes section",
+        "The PDF names the video ('Me at the zoo') and channel (jawed)",
+        "The transcript came from captions (no slow Whisper run)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I recorded the last few minutes of a webinar, it's at ~/Downloads/webinar-ending.m4a. no captions obviously. transcribe it and give me notes as a PDF",
+      "expected_output": "Local Whisper transcription of the file with the silence hallucinations ('Thank you.') removed, and a PDF of notes covering the speaker's closing remarks.",
+      "files": [
+        "inputs/webinar-ending.m4a"
+      ],
+      "assertions": [
+        "A PDF was produced",
+        "Page 1 is not mostly empty (>=500 chars, or a 1-page PDF)",
+        "meta.json records the local file's duration",
+        "The local file was transcribed with Whisper",
+        "No phantom standalone 'Thank you.' lines in the transcript",
+        "The notes capture the closing remarks (thanks to the team / see you tomorrow)"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "extract the audio from https://youtu.be/jNQXAC9IVRw as an mp3 and also give me a short pdf of what's said in it",
+      "expected_output": "An mp3 of the video's audio plus a short PDF summary; captions are used for the text, so no slow transcription.",
+      "files": [],
+      "assertions": [
+        "A PDF was produced",
+        "Page 1 is not mostly empty (>=500 chars, or a 1-page PDF)",
+        "No outside facts about the video above the Notes section",
+        "The PDF names the video ('Me at the zoo') and channel (jawed)",
+        "The transcript came from captions (no slow Whisper run)",
+        "A playable mp3 of the full audio (~19 s) was produced"
+      ]
+    }
+  ]
+}
