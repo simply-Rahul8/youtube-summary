@@ -34,3 +34,7 @@ Start a new Claude Code session. Then either run `/youtube-summary <url>` or jus
 ## Responsible use
 
 Only process videos you're allowed to watch, and keep downloaded media for personal use. YouTube's Terms of Service restrict downloading, so check them yourself. yt-dlp's docs warn that automated use of a signed-in account can get it rate-limited or banned. For your own uploads, YouTube Studio's download or Google Takeout are the safe routes, and the skill accepts those files directly.
+
+## License
+
+MIT, see [LICENSE](LICENSE).
